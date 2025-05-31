@@ -14,6 +14,7 @@ def test_cookies(page: Page):
     cookie_div = page.locator("body > div.cc_banner-wrapper > div")
     expect(cookie_div).not_to_be_visible()
 
+    # Ověření přechodu na jinou stránku, pomocí Enter
 def test_hledat(page: Page):
     page.goto("https://www.wilsonka.cz/")
     input = page.locator("#hlavni > div.hlavicka.home > form > fieldset > input.fraze")    
@@ -22,7 +23,7 @@ def test_hledat(page: Page):
     page.wait_for_timeout(3000)
     assert page.url == "https://www.wilsonka.cz/search/"
 
-
+    # Ověření otevření stránky na nové záložce
 def test_title(page: Page):
     page.goto("https://www.wilsonka.cz/")
     
