@@ -1,5 +1,5 @@
 # Treti_ukol
-Zadány 3 testovací funkce, výsledek viz níže. Vzhledem k tomu, že mám verzi Phytonu 3.13.2, měl jsem jsem problémy s použitím vlastní page, proto ji v testu nepoužívám. Raději pro poptlačení chybové hlášky PytestDeprecationWarning jsem vytvořil pytest.ini, který je součástí testu.
+Zadány 3 testovací funkce, výsledek viz níže. Vzhledem k tomu, že mám verzi Phytonu 3.13.2, měl jsem jsem problémy s použitím vlastní page, proto ji v testu nepoužívám. Raději pro potlačení chybové hlášky PytestDeprecationWarning jsem vytvořil pytest.ini, který je součástí testu.
 Využívám prohlížeč MS Edge.
 Výsledek testů:
 pytest test_wilsonka.py -v
